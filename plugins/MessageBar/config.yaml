@@ -1,0 +1,33 @@
+name:        MessageBar
+id:          MessageBar
+description: <__trans phrase="A message is displayed on the management screen.">
+author_name: <__trans phrase="Alfasado Inc.">
+author_link: "https://alfasado.net/"
+l10n_class:  MessageBar::L10N
+version:     0.45
+system_config_template: system_config.tmpl
+settings:
+    messagetext:
+        scope: system
+        default: 
+    messagetextcolor:
+        scope: system
+        default: "#ffffff"
+    messagebackgroundcolor:
+        scope: system
+        default: "#c53d43"
+config_settings:
+    MessageText:
+        default: 
+        updatable: 1
+    MessageTextColor:
+        default: 
+        updatable: 1
+    MessageColor:
+        alias: MessageTextColor
+    MessageBackgroundColor:
+        default:
+        updatable: 1
+callbacks:
+    MT::App::CMS::template_source.header: $MessageBar::MessageBar::CMS::_hdlr_ts_header
+

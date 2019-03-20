@@ -1,0 +1,42 @@
+<mtapp:setting
+    id="messagetext"
+    label="<__trans phrase="Text">"
+    show_hint="0"
+    hint="">
+<mt:if name="config.MessageText">
+    <input type="text" class="text disabled" name="messagetext" id="messagetext" value="<$mt:getvar name="config.MessageText"$>" />
+<mt:else>
+    <input type="text" class="text" name="messagetext" id="messagetext" value="<$mt:var name="messagetext"$>" />
+</mt:if>
+</mtapp:setting>
+
+<mtapp:setting
+    id="messagetextcolor"
+    label="<__trans phrase="Text Color">"
+    show_hint="1"
+    hint="#ffffff">
+<mt:if name="config.MessageTextColor">
+    <input type="text" class="text short disabled" name="messagetextcolor" id="messagetextcolor" value="<$mt:var name="config.MessageTextColor"$>" />
+<mt:else>
+    <input type="text" class="text short" name="messagetextcolor" id="messagetextcolor" value="<$mt:var name="messagetextcolor"$>" />
+</mt:if>
+</mtapp:setting>
+
+<mtapp:setting
+    id="messagebackgroundcolor"
+    label="<__trans phrase="Background Color">"
+    show_hint="1"
+    hint="#C53D43">
+<mt:if name="config.MessageBackgroundColor">
+    <input type="text" class="text short disabled" name="messagebackgroundcolor" id="messagebackgroundcolor" value="<$mt:var name="config.MessageBackgroundColor"$>" />
+<mt:else>
+    <input type="text" class="text short" name="messagebackgroundcolor" id="messagebackgroundcolor" value="<$mt:var name="messagebackgroundcolor"$>" />
+</mt:if>
+</mtapp:setting>
+
+
+
+
+
+
+

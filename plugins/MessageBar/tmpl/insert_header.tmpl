@@ -1,0 +1,21 @@
+<style type="text/css">
+body::before {
+    content: '<$mt:var name="content" escape="html"$>';
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.5;
+    font-weight: bold;
+    background-color: <$mt:var name="backgroundcolor" escape="html"$>;
+    color: <$mt:var name="color" escape="html"$>;
+}
+
+<mt:if name="use_powercms">
+h1#page-title {
+    top: auto !important;
+    margin-top: 8px;
+}
+</mt:if>
+
+</style>
+
